@@ -1,0 +1,16 @@
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @font-face {
+      font-family: 'CentraNo2';
+      src: url('CentraNo2-Bold.ttf') format('truetype');
+    }
+    text {
+      font-family: 'CentraNo2', sans-serif;
+      font-weight: bold;
+      fill: white;
+      font-size: 50px;
+      letter-spacing: 1.5px;
+    }
+  </style>
+  <text x="0" y="42">Onur Eğe</text>
+</svg>
