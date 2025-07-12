@@ -474,13 +474,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #050912 -5.91%, #050912 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
   width: 92%;
+  border-radius: 36%;
 }
 .contact h2 {
 	font-size: 45px;
