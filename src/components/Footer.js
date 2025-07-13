@@ -9,7 +9,7 @@ export const Footer = () => {
         <footer className="footer">
             <Container>
                 <Row className="align-items-center">
-                    <Col sm={6}>
+                    <Col sm={6} href="#home">
                         <img src={name} alt="Name" />
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">

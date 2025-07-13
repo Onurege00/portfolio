@@ -3,10 +3,10 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import { Container, Row, Col } from "react-bootstrap";
+import "animate.css";
+import TrackVisibility from 'react-on-screen';
 
 export const Skills = () => {
     const responsive = {
@@ -34,10 +34,15 @@ export const Skills = () => {
                 <Row>
                     <Col>
                         <div className="skill-bx">
-                            <h2>
-                                Skills
-                            </h2>
-                            <p>I specialize in developing web applications, mobile experiences, and applying machine learning to solve real-world problems. Good at Java, Kotlin, Python, and React. I build efficient APIs with Spring Boot and craft user-friendly Android apps using Jetpack Compose. My skills also includes working with Neo4j for graph data science, developing recommendation systems. I strive to create performant, maintainable, and impactful software.</p>
+                            <TrackVisibility>
+                            { ({isVisible}) =>
+                                <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                                    <h2>
+                                        Skills
+                                    </h2>
+                                    <p>I specialize in developing web applications, mobile experiences, and applying machine learning to solve real-world problems. Good at Java, Kotlin, Python, and React. I build efficient APIs with Spring Boot and craft user-friendly Android apps using Jetpack Compose. My skills also includes working with Neo4j for graph data science, developing recommendation systems. I strive to create performant, maintainable, and impactful software.</p>
+                                </div>}
+                            </TrackVisibility>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
