@@ -7,10 +7,8 @@
 
 # testing
 /coverage
-
 # production
 /build
-K.js
 # misc
 .DS_Store
 .env.local
