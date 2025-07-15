@@ -10,7 +10,7 @@ export const Projects = () => {
     const project1 = [
         {
             title: "Android App (Jetpack Compose)",
-            description: "Modern mobile interface built with Kotlin and Jetpack Compose. Includes movie search, TopAppBar, paginated categories, and responsive design.",
+            description: "Modern mobile interface built with Kotlin and Jetpack Compose.",
             imgUrl: projectBackground
         },{
             title: "Spring Boot Backend API",
@@ -18,7 +18,7 @@ export const Projects = () => {
             imgUrl: projectBackground
         },{
             title: "Firebase Authentication",
-            description: "Google Sign-In integration via Firebase. Authenticated users can rate, favorite, and get personalized recommendations.",
+            description: "Google Sign-In integration via Firebase. Authenticated users can rate, favorite, and get recommendations.",
             imgUrl: projectBackground
         },{
             title: "TMDb Integration",
@@ -26,7 +26,7 @@ export const Projects = () => {
             imgUrl: projectBackground
         },{
             title: "Recommendation Engine (Graph ML)",
-            description: "Neo4j GDS-powered movie recommendations using Node2Vec, FastRP, and link prediction models. Hybrid logic combines graph rank and similarity.",
+            description: "Neo4j GDS-powered movie recommendations using Node2Vec, and link prediction models. Hybrid logic combines graph rank and similarity.",
             imgUrl: projectBackground
         },{
             title: "Collaborative Filtering",
@@ -42,11 +42,11 @@ export const Projects = () => {
             imgUrl: projectBackground
         },{
             title: "Hibernate ORM & Mysql",
-            description: "All application data is persisted with Hibernate ORM, ensuring seamless object-relational mapping. MySQL is used as the backend database for robust data storage.",
+            description: "data is persisted with Hibernate ORM, ensuring seamless object-relational mapping. MySQL is used as the backend database.",
             imgUrl: projectBackground
         },{
             title: "Customer & Product Management",
-            description: "Supports full CRUD operations: add, edit, delete customers and products. Users can view detailed lists and interact with data via intuitive controls.",
+            description: "Supports full CRUD operations: add, edit, delete customers and products.",
             imgUrl: projectBackground
         },{
             title: "Cart System & Login Flow",
@@ -81,10 +81,10 @@ export const Projects = () => {
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Movie Recommendation App</Nav.Link>
+                                    <Nav.Link eventKey="first">Movie App</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Customer Management System</Nav.Link>
+                                    <Nav.Link eventKey="second">CMS</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">For More</Nav.Link>

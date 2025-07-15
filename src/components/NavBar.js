@@ -1,13 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import name from '../assets/img/name.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import linkedin from '../assets/img/linkedin.svg';
+import github from '../assets/img/github.svg';
+import mail from '../assets/img/mail.svg';
 
 export const NavBar = () => {
 
@@ -33,7 +29,6 @@ export const NavBar = () => {
   }
 
   return (
-    <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -47,19 +42,16 @@ export const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
-              <Nav.Link href="#connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('connect')}>Connect</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/onur-ege-19230626b/"><img src={navIcon1} alt="LinkedIn" /></a>
-                <a href="https://github.com/Onurege00"><img src={navIcon2} alt="Github" /></a>
-                <a href="mailto:egeonur2121@gmail.com"><img src={navIcon3} alt="Gmail" /></a>
+                <a href="https://www.linkedin.com/in/onur-ege-19230626b/"><img src={linkedin} alt="LinkedIn" /></a>
+                <a href="https://github.com/Onurege00"><img src={github} alt="Github" /></a>
+                <a href="mailto:egeonur2121@gmail.com"><img src={mail} alt="Gmail" /></a>
               </div>
-              
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
   )
 }
