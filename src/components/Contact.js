@@ -26,20 +26,29 @@ export const Contact = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch("https://mail.onurege.tech/contact",{
-            method:"POST",
-            headers:{
-                "Content-Type":"Application/json;charset=utf-8"
-            },
-            body:JSON.stringify(formDetails)
-        });
-        setButtonText("Send");
-        let result = await response.json();
-        setFormDetails(initialFormDetails);
-        if(result.code === 200){
-            setStatus({success: true, message:"Messsage sent succesfully."});
-        }else{
-            setStatus({success: false, message:"Something went wrong, please try again later."});
+        try {
+            const response = await fetch("https://mail.onurege.tech/contact", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"  
+              },
+              body: JSON.stringify(formDetails)
+            });
+
+            setButtonText("Send");
+            let result = await response.json();
+            setFormDetails(initialFormDetails);
+
+            if(result.code === 200){
+                setStatus({success: true, message:"Messsage sent succesfully."});
+            }else{
+                setStatus({success: false, message:"Something went wrong, please try again later."});
+            }
+
+        } catch (err) {
+            console.error("Error while sending:", err);
+            setButtonText("Send");
+            setStatus({ success: false, message: "Request failed. Check your internet or try again later." });
         }
     }
 
