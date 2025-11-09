@@ -54,11 +54,18 @@ export const Banner = () => {
                                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                                     <span className="tagline">Welcome To My Portfolio</span>
                                     <h1>{`Hi, I'm a `}<span className="wrap">{text}</span></h1>
-                                    <p>As a software engineer, I have full-stack development experience. On the backend, I have developed robust and scalable applications using Java and the Spring Framework; on the frontend, I have built user-focused solutions with Ember.js. I have worked on RESTful and SOAP APIs as well as microservice architectures, and possess strong knowledge in database design and querying (PostgreSQL, DBeaver). 
-                                        
-                                        I am proficient with version control systems (Git) and have basic Docker knowledge, allowing me to adapt to modern development workflows. I contribute to quality assurance processes by writing unit and integration tests, and I take an active role in software documentation and release management.I also have experience in deployments using Jenkins and CI/CD pipelines, and have participated in Agile methodology-based sprint cycles. 
-                                        
-                                        Thanks to my analytical thinking skills and collaborative mindset, I play an active role in production-level development processes, where I continue to pursue my work. </p>
+                                    <p>
+                                        As a software engineer, I have full-stack development experience. On the backend, I have developed robust and scalable applications using Java and the Spring Framework; on the frontend, I have built user-focused solutions with Ember.js.
+                                    </p>
+                                    <p>
+                                        I have worked on RESTful and SOAP APIs as well as microservice architectures, and possess strong knowledge in database design and querying (PostgreSQL, DBeaver). I am proficient with version control systems (Git) and have basic Docker knowledge, allowing me to adapt to modern development workflows.
+                                    </p>
+                                    <p>
+                                        I contribute to quality assurance processes by writing unit and integration tests, and I take an active role in software documentation and release management. I also have experience in deployments using Jenkins and CI/CD pipelines, and have participated in Agile methodology-based sprint cycles.
+                                    </p>
+                                    <p>
+                                    Thanks to my analytical thinking skills and collaborative mindset, I play an active role in production-level development processes, where I continue to pursue my work.
+                                    </p>       
                                     <HashLink to="#connect">
                                         <button onClick={()=>console.log("connect")}>Let's Connect<ArrowRightCircle size={25}/></button>
                                     </HashLink>
