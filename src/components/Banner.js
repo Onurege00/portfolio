@@ -10,7 +10,6 @@ import { BrowserRouter as Router} from "react-router-dom";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Computer Engineer", "Software Developer", "AI and Data Science Enthusiast"]
     const [text, setText] = useState("");
 
     const TYPING_SPEED = 75;
@@ -18,6 +17,8 @@ export const Banner = () => {
     const PAUSE_DURATION = 1000;
 
     useEffect(() => {
+        const toRotate = ["Computer Engineer", "Software Developer", "AI and Data Science Enthusiast"]
+
         const handleTyping = () => {
             const current = loopNum % toRotate.length;
             const fullText = toRotate[current];
@@ -41,7 +42,7 @@ export const Banner = () => {
         );
 
         return () => clearTimeout(timeout);
-    }, [text, isDeleting, loopNum, toRotate]);
+    }, [text, isDeleting, loopNum]);
 
     return(
         <Router>
