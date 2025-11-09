@@ -40,13 +40,13 @@ export const Skills = () => {
                                     <h2>
                                         Skills
                                     </h2>
-                                    <p>I specialize in developing web applications, mobile experiences, and applying machine learning to solve real-world problems. Good at Java, Kotlin, Python, and React. I build efficient APIs with Spring Boot and craft user-friendly Android apps using Jetpack Compose. My skills also includes working with Neo4j for graph data science, developing recommendation systems. I strive to create performant, maintainable, and impactful software.</p>
+                                    <p>I specialize in developing web applications, mobile experiences, and applying machine learning to solve real-world problems. Good at Java, Ember.js, Kotlin, Python, and React. I build efficient APIs with Spring Boot and craft user-friendly Android apps using Jetpack Compose. My skills also includes working with Neo4j for graph data science, developing recommendation systems. I strive to create performant, maintainable, and impactful software.</p>
                                 </div>}
                             </TrackVisibility>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
-                                    <h5>Web & Backend Development</h5>
+                                    <h5>Full Stack Development</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image"/>
